@@ -1,0 +1,242 @@
+
+  body{
+    font-family: Raleway;
+  }
+
+  h2{
+    font-family: Raleway;
+    text-align: center;
+    font-size:x-large;
+    color: rgb(8, 30, 67);
+  }
+  li{
+    font-family: Raleway;
+    text-align: justify;
+    color: rgb(41, 33, 115);
+  }
+
+  #menu-section{
+    background:#fff;
+    overflow:hidden;
+    width:100%;
+    height:55px;
+    top:0;
+    bottom:0;
+    position:fixed;
+    z-index:9999;
+  }
+  .logo{
+    float:left;
+    width:30%;
+    height:55px;
+    display:flex;
+    align-items:left;
+    justify-content:left;
+    margin-left: 40px;
+   }
+  
+  .menu{
+    float:left;
+    width:60%;
+    height:55px;
+  }
+  .menu ul{
+    list-style:none;
+    text-align:right;
+   margin-right:0px;
+   padding:3px 0px 0px 0px;
+    }
+  .menu ul li{
+    display:inline;
+    margin-left:20px;
+    }
+   .menu ul li a{
+    position:relative;
+    text-decoration:none;
+    color:#333;
+    text-transform:uppercase;
+    font-weight:200;
+    letter-spacing:2px;
+    transition:all 0.2s ease;
+    height:55px;
+    }
+  .menu ul li a::after{
+    content:'';
+    position:absolute;
+    top:23px;
+    left:0;
+    bottom:0;
+    z-index:-1;
+    height:3px;
+    background:#e74c3c;
+    border-radius:2px;
+    transition:all 0.2s ease;
+    opacity:0;
+    width:calc(100% - 55px);
+    }
+  
+  .menu ul li a:hover:after{
+    opacity:1;
+    width:100%;
+  }
+  .menu ul li a:hover{
+    opacity:0.9;
+    cursor:pointer;
+   }
+
+ /*Welcome content*/
+
+ .flexboxContainer {
+    display:flex;
+    flex-direction: row;
+    margin-top:100px;
+
+  }
+
+  .flexboxItem1 {
+    width:60%;
+    padding:2%;
+
+}
+.flexboxItem1 h1{
+    font-size:80px;
+    line-height:90px;
+    font-weight: bold;
+    text-transform:uppercase;
+    color:rgb(28, 13, 123);
+    text-align: center;
+    justify-content: center;
+
+}
+.flexboxItem1 h3{
+    font-size:80px;
+    line-height:100px;
+    font-weight: bold;
+    text-transform:uppercase;
+    color:rgb(28, 13, 123);
+    margin-left:68px;
+    margin-top:-90px;
+}
+.flexboxItem1 h6{
+    font-size:20px;
+    font-weight:bold;
+    text-transform:uppercase;
+    color:rgb(148, 77, 77);
+    margin-top:-163px;
+    margin-left:130px;
+    margin-right: 80px;
+    line-height:22px;
+    text-align:justify;
+
+}  
+.flexboxItem2 {
+    width:30%;
+    padding: 2%;
+    height: 55vh;
+    overflow: hidden;
+    flex-grow: 1;
+    margin-right: 85px;
+}
+img{
+        max-height: 80%;
+        min-width: 80%;
+        object-fit: contain;
+      }
+ 
+
+  /* funfacts container */
+
+.funFactsContainer {
+    margin-left:15px;
+
+}
+
+  /* gallery container */
+
+.gallery-image {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .gallery-image img {
+    height: 250px;
+    width: 350px;
+    transform: scale(1.0);
+    transition: transform 0.4s ease;
+  }
+  
+  .img-box {
+    box-sizing: content-box;
+    margin: 10px;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    display: inline-block;
+    color: white;
+    position: relative;
+    background-color: white;
+  }
+  
+  .caption {
+    position: absolute;
+    bottom: 7px;
+    left: 20px;
+    opacity: 0.0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .transparent-box {
+    height: 250px;
+    width: 350px;
+    background-color:rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .img-box:hover img { 
+    transform: scale(1.1);
+  }
+  
+  .img-box:hover .transparent-box {
+    background-color:rgba(0, 0, 0, 0.5);
+  }
+  
+  .img-box:hover .caption {
+    transform: translateY(-20px);
+    opacity: 1.0;
+  }
+  
+  .img-box:hover {
+    cursor: pointer;
+  }
+  
+  .caption > p:nth-child(2) {
+    font-size: 0.8em;
+  }
+  
+  .opacity-low {
+    opacity: 0.5;
+  }
+
+    /* timeline container */
+
+.timelineContainer {
+    padding:1%;
+    margin-left: 15px;
+    overflow: hidden;
+    height: 100vh;
+    flex-grow: 1;
+}
+.timelineContainer img{
+ 
+    max-height: 100%;
+    min-width: 100%;
+    vertical-align: bottom;
+    align-items: center;
+      }
+      
+  /* footer */
