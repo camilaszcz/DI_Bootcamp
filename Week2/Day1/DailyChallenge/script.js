@@ -14,3 +14,7 @@ const moreFruits = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
 console.log(moreFruits[1]);//result (3) ['Apples', Array(1), 'Blueberries']
 console.log(moreFruits[1][1]);//result ['Oranges']
 
+//correction: 
+console.log(moreFruits[1][1][0]); 
+//result 'Oranges'
+
