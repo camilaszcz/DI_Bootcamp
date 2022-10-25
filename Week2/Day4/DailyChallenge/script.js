@@ -1,9 +1,19 @@
 //Daily Challenge
 
-const answer = prompt('Type a few words separated by commas');
+const answer = prompt ('Type a few words separated by commas');
 const words = answer.split(",");
 
+console.log(words);
+
+
 function getLengthOfLongestWord(){
+    let row = 0;
+    for (let i=0; i<numberOfStarsOnFirstRow; i++) {
+        if (words[i].lenght>row){
+            row=words[i].length;
+        }
+    }
+    return row;
 const lenghtOfLongestWord = getLengthOfLongestWord();
 displayRows();
 }
@@ -18,18 +28,17 @@ function displayRows(){
 }
 
 function displayWord(word){
-    const spaces= lenghtOfLongestWord - word.length;
+    const spaces= getLengthOfLongestWord - word.length;
     const emptySpaces = " ".repeat(spaces);
     console.log(`*${word}${spaces}*`);
-
 }
 
 function getLengthOfLongestWord(){
-    let lenghtOfLongestWord=0;
+    let lenghtOfLongestWord = 0;
     for (const word of words){
     const wordLength = word.length;
-    if (wordLength>lengthOfLongestWord){
-        lengthOfLongestWord = wordLength;
+    if (wordLength>lenghtOfLongestWord){
+        lenghtOfLongestWord = wordLength;
     }
 }
 return lenghtOfLongestWord;
@@ -37,11 +46,7 @@ return lenghtOfLongestWord;
 
 function createFirstRow() {
 
-    const numberOfStarsOnFirstRow = lenghtOfLongestWord+4;
+    const numberOfStarsOnFirstRow = lenghtOfLongestWord + 4;
 
-    let row = "";
-    for (let i=0<numberOfStarsOnFirstRow; i++) {
-        row=row+"*";
-    }
-    return row;
+
 } 
