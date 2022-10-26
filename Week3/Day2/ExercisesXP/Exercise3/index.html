@@ -6,41 +6,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Document</title>
-    Instructions
-
-<!DOCTYPE html>
-    <html>
-    <head>
-        <style>
-        #target {
-          width: 200px;
-          height: 200px;
-          position: relative;
-          background: yellow;
-        }
-        #box {
-          width: 50px;
-          height: 50px;
-          position: absolute;
-          background-color: red;
-        }
-        </style>
-    </head>
-    <body>
-        <div id="target"></div>
-        <br>
-        <div id="box"></div>
-    </body>
-    </html>
-
-
-Copy the code above, to a structured HTML file.
-In your Javascript file add the functionality which will allow you to drag the box and drop it into the target. Check out the Course Notes named DOM animations.
-
-    
-    <script src="script.js"></script>
 </head>
 <body>
+
+    <article>
+        <h1> Some Facts </h1>
+        <h2> The Chocolate </h2>
+        <h3> History of the chocolate </h3>
+        <p> Chocolate is made from tropical Theobroma cacao tree seeds. 
+        Its earliest use dates back to the Olmec civilization in Mesoamerica.</p>
+        <p> After the European discovery of the Americas, chocolate became 
+        very popular in the wider world, and its demand exploded. </p>
+        <p> Chocolate has since become a popular food product that millions enjoy every day, 
+        thanks to its unique, rich, and sweet taste.</p> 
+        <p> But what effect does eating chocolate have on our health?</p> 
+    </article>
     
+    
+
+    
+    
+    🌟 Exercise 2 : Work With Forms
+    
+    Instructions
+    
+    Copy the code below, into a structured HTML file:
+    
+    <form>
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname"><br><br>
+      <input type="submit" value="Submit" id="submit">
+    </form> 
+    <ul class="usersAnswer"></ul>
+    
+    
+    Retrieve the form and console.log it.
+    
+    Retrieve the inputs by their id and console.log them.
+    
+    Retrieve the inputs by their name attribute and console.log them.
+    
+    When the user submits the form (ie. submit event listener)
+    use event.preventDefault(), why ?
+    get the values of the input tags,
+    make sure that they are not empty,
+    create an li per input value,
+    then append them to a the <ul class="usersAnswer"></ul>, below the form.
+    The output should be :
+    
+    <ul class="usersAnswer">
+        <li>first name of the user</li>
+        <li>last name of the user</li>
+    </ul>
+    
+    
+    🌟 Exercise 3 : Transform The Sentence
+    
+    Instructions
+    
+    Add this sentence to your HTML file then follow the steps :
+    
+    <p><strong>Hello</strong> I hope you are enjoying <strong>this</strong> class. At the
+    <strong>end</strong> you <strong>will</strong> be great Developers!
+    <strong>Enjoy</strong> the <strong>JavaScript </strong> lessons</p>
+    
+    
+    In the JS file:
+    
+    Declare a global variable named allBoldItems.
+    
+    Create a function called getBold_items() that takes no parameter. This function should collect all the bold items inside the paragraph and assign them to the allBoldItems variable.
+    
+    Create a function called highlight() that changes the color of all the bold text to blue. 
+    
+    Create a function called return_normal() that changes the color of all the bold text back to black. 
+    
+    Call the function highlight() on mouseover (ie. when the mouse pointer is moved onto the paragraph), and the function return_normal() on mouseout (ie. when the mouse pointer is moved out of the paragraph). Look at this example
+    
+    
+    🌟 Exercice 4 : Volume Of A Sphere
+    
+    Instructions
+    
+    Write a JavaScript program to calculate the volume of a sphere. Use the code below as a base:
+    <!doctype html> 
+    <html lang="en"> 
+        <head> 
+            <meta charset="utf-8"> 
+            <title>Volume of a Sphere</title> 
+            <style>  
+                body {
+                    padding-top:30px;
+                } 
+    
+                label,input {
+                    display:block;
+                }  
+            </style> 
+        </head> 
+        <body> 
+            <p>Input radius value and get the volume of a sphere.</p> 
+            <form  id="MyForm"> 
+                <label for="radius">Radius</label><input type="text" name="radius" id="radius" required> 
+                <label for="volume">Volume</label><input type="text" name="volume" id="volume"> 
+                <input type="submit" value="Calculate" id="submit">    
+            </form> 
+        </body> 
+    </html> 
+    
+    
+    Exercise 5 : Event Listeners
+    
+    Instructions
+    
+    Add many events listeners to one element on your webpage. Use the click, mouseover, mouseout and dblclick events.
+    Each listener should do a different thing, for instance - change position x, change position y, change color, change the font size… and more.   
+<script src="script.js"></script>
 </body>
 </html>

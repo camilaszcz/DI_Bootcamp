@@ -1,11 +1,27 @@
-// Exercise 2 : Move The Box
+// Retrieve the form and console.log it.
 
-//     Instructions
-    
-//     In your Javascript file, use setInterval to move the <div id="animate"> to the right side of the <div id="container">, when the button is 
-//     clicked on.
-//     The <div id="animate"> should move 1px to the right every milisecond, until it reaches the end of the <div id="container">.
-//     Hint : use clearInterval as soon as the box reaches the right end side of the container
-//     Hint : check out the demonstration in the Course Noted named JS Functions
-    
+    const.myForm = document.forms[0];
+    console.log(myForm);
+//     Retrieve the inputs by their id and console.log them.
 
+    const myForm = document.forms[0].fname;
+    console.log(myForm);
+//     Retrieve the inputs by their name attribute and console.log them.
+
+    const myForm = document.forms[0].elements.fname;
+    console.log(myForm);
+
+    
+//     When the user submits the form (ie. submit event listener)
+//     use event.preventDefault(), why ?
+//     get the values of the input tags,
+//     make sure that they are not empty,
+//     create an li per input value,
+//     then append them to a the <ul class="usersAnswer"></ul>, below the form.
+//     The output should be :
+    
+//     <ul class="usersAnswer">
+//         <li>first name of the user</li>
+//         <li>last name of the user</li>
+//     </ul>
+    
