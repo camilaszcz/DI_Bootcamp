@@ -49,6 +49,7 @@
 const node = document.createElement("container");
 const textnode = document.createTextNode("Hello World");
 
+
 setInterval(greeting, 2000);
 
 function greeting(){
@@ -108,3 +109,26 @@ function greeting(){
 // //clearInterval(myInterval, 10000);
 
 
+let divContainer = document.getElementById("container");
+let newP = document.createElement("p");
+let textP = document.createTextNode("hello world")
+
+function helloP () {
+    newP.appendChild(textP);
+    divContainer.appendChild(newP);
+}
+setTimeout(helloP, 2000);
+let myInterval = setInterval (addP2, 2000);
+function addP2 () {
+    let newP2 = document.createElement("p");
+    let textP2 = document.createTextNode("hello world p2");
+    newP2.appendChild(textP2);
+    divContainer.appendChild(newP2);
+}
+
+let btn = document.getElementById("clear");
+btn.addEventListener("click", clear);
+
+function clear() {
+    clearInterval(myInterval);
+}

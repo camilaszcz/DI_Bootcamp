@@ -43,3 +43,14 @@ function allLetter()
   }
 
   // is giving me the alert regardless of type and not replacing if it is not a letter.
+
+  const userInput = document.querySelector('input');
+  const allowedChars = /[A-Za-z]/;
+  userInput.addeEventListener('keydown', checkKey)
+    function checkKey(event){
+      console.log(event);
+      console.log(event.key);
+      if (!allowedChars.test(event.key)){
+      event.preventDefault();
+     }
+    }
