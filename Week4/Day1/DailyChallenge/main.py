@@ -19,12 +19,7 @@ else:
     #     print(temp_str)
         
     for i in range(len(string)):
-    print(string[:i+1])
-# Using a for loop, construct the string character by character: 
-# Print the first character, then the second, then the third, until the full string is printed. 
-
-# for x in string(0,9,1):
-#     print(x)
+        print(string[:i+1])
     
 
-    
+
