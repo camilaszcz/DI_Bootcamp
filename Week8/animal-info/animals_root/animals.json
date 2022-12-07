@@ -1,0 +1,93 @@
+{
+    "animals": [
+        {
+            "id" :1,
+            "name": "Greyhound",
+            "legs": 4,
+            "weight": 27,
+            "height":71,
+            "speed": 70,
+            "family": 2
+        },
+        {
+            "id": 2,
+            "name": "Domestic Cat",
+            "legs": 4,
+            "weight": 4,
+            "height":25,
+            "speed": 48,
+            "family": 1
+        },
+        {
+            "id": 3,
+            "name": "Leopard",
+            "legs": 4,
+            "weight": 80,
+            "height":70,
+            "speed": 58,
+            "family": 1
+        },
+        {
+            "id": 4,
+            "name": "Blue Whale",
+            "legs": 0,
+            "weight": 150000,
+            "height":30,
+            "speed": 23,
+            "family": 3
+        },
+        {
+            "id": 5,
+            "name": "Psyche butterfly",
+            "legs": 4,
+            "weight": 0.15,
+            "height":0.12,
+            "speed": 4,
+            "family": 5
+        },
+        {
+            "id": 6,
+            "name": "Goliath Frog",
+            "legs": 4,
+            "weight": 3,
+            "height":0.32,
+            "speed": 16,
+            "family": 6
+        },
+        {
+            "id": 7,
+            "name": "Komodo dragon",
+            "legs": 4,
+            "weight": 70,
+            "height":3.3,
+            "speed": 20,
+            "family": 4
+        }
+    ],
+    "families": [
+        {
+            "id": 1,
+            "name": "Felidae"
+        },
+        {
+            "id": 2,
+            "name": "Caninae"
+        },
+        {
+            "id": 3,
+            "name": "Balaenopteridae"
+        },
+        {
+            "id": 4,
+            "name": "Varanidae"
+        },
+        {
+            "id": 5,
+            "name": "Pieridae"
+        },
+        {
+            "id": 6,
+            "name": "Conrauidae"
+        }
+        ]
+}

@@ -13,11 +13,11 @@ for key in theBoard:
     board_keys.append(key)
 
 def printBoard(board):
-    print(board['7'] + '|' + board['8'] + '|' + board['9'])
-    print('-+-+-')
-    print(board['4'] + '|' + board['5'] + '|' + board['6'])
-    print('-+-+-')
-    print(board['1'] + '|' + board['2'] + '|' + board['3'])
+    print(board['7'] + '|' + board['8'] + '|' + board['9']) #vertical line
+    print('-+-+-')                                          #horizontal line
+    print(board['4'] + '|' + board['5'] + '|' + board['6']) #vertical line
+    print('-+-+-')                                          #horizontal line
+    print(board['1'] + '|' + board['2'] + '|' + board['3']) #vertical line
     
     
 def game():
@@ -25,7 +25,7 @@ def game():
     turn = 'X'
     count = 0
 
-    for i in range(10):
+    for i in range(9):
         printBoard(theBoard)
         print("It's your turn," + turn )
 
@@ -37,7 +37,7 @@ def game():
         else:
             print("That place is already filled.")
             continue
-# Winning possibilities after 5 moves(minimun needed to determine winner)
+# Winning possibilities after 5 moves:
         if count >= 5:
             if theBoard['7'] == theBoard['8'] == theBoard['9'] != ' ': # across the top
                 printBoard(theBoard)
@@ -99,6 +99,6 @@ def game():
 
         game()
 
-# Condition to run the game one we rum the file depending on its name:
+# Condition to run the game once we run the file depending on its name:
 if __name__ == "__main__":
     game()
